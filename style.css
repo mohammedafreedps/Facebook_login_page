@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+        height: 100vh;
+    }
+    50%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+        
+    }
+    100%{
+       height: 0vh;
+        opacity: 0;
+
+    }
+}
+
+.introbg{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    animation: fadeout 5s forwards;
+    pointer-events: none;
+    position: relative;
+}
+.intro_logo{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    pointer-events: none;
+    animation: fadeout 4s forwards;
+
+}
+.intro_logo img{
+    width: 15rem;
+    height: 15rem;
+    pointer-events: none;
+}
+.homepage{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.leftside{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.leftside h2{
+    color: #1877f2;
+    font-size: 5rem;
+    margin: 0;
+    margin-left: 4rem;
+    
+}
+.leftside p{
+    font-size: 3rem;
+    margin: 0;
+    margin-left: 4rem;
+}
+.rightside{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.passfield form{
+
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 420px;
+    height: 370px;
+    padding: 10px 5px 20px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    transform: translateX(-16rem);
+    margin-top: -8rem;
+ 
+}
+.passfield [type='text'], input[type='password']{
+    display: block;
+    background-color: aliceblue;
+    margin: auto;
+    border: 1.5px solid rgb(200, 200, 200);
+    width: 300px;
+    height: 30px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-align: left;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+.bnt1{
+    border: none;
+    background-color: #1877f2;
+    color: white;
+    margin: auto;
+    width: 383px;
+    height: 50px;
+    display: block;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.f-pws{
+    display: block;
+    width: 200px;
+    margin: auto;
+    color: #1877f2;
+    padding-left: 80px;
+    font-weight: 400;
+}
+.line{
+    border-top: 1px solid #222;
+    opacity: 0.2;
+}
+.bnt2{
+    border: none;
+    color: white;
+    margin: auto;
+    width: 283px;
+    display: block;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 180px;
+    font-size: 14px;
+    background-color: #42b72a;
+    text-align: center;
+}
